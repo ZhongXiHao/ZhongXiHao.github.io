@@ -2,12 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ZhongXiHao.github.io/categories/</loc>
+    <loc>https://zhongxihao.github.io/</loc>
+    <lastmod>2023-01-08T00:46:15+08:00</lastmod>
   </url><url>
-    <loc>https://ZhongXiHao.github.io/</loc>
+    <loc>https://zhongxihao.github.io/posts/my-first-post/</loc>
+    <lastmod>2023-01-08T00:46:15+08:00</lastmod>
   </url><url>
-    <loc>https://ZhongXiHao.github.io/posts/</loc>
+    <loc>https://zhongxihao.github.io/tags/posts/</loc>
+    <lastmod>2023-01-08T00:46:15+08:00</lastmod>
   </url><url>
-    <loc>https://ZhongXiHao.github.io/tags/</loc>
+    <loc>https://zhongxihao.github.io/posts/</loc>
+    <lastmod>2023-01-08T00:46:15+08:00</lastmod>
+  </url><url>
+    <loc>https://zhongxihao.github.io/tags/</loc>
+    <lastmod>2023-01-08T00:46:15+08:00</lastmod>
   </url>
 </urlset>

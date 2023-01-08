@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Midsnk</title>
-    <link>https://zhongxihao.github.io/</link>
-    <description>Recent content on Midsnk</description>
+    <title>posts on Midsnk</title>
+    <link>https://zhongxihao.github.io/tags/posts/</link>
+    <description>Recent content in posts on Midsnk</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 08 Jan 2023 00:46:15 +0800</lastBuildDate><atom:link href="https://zhongxihao.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Jan 2023 00:46:15 +0800</lastBuildDate><atom:link href="https://zhongxihao.github.io/tags/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
       <link>https://zhongxihao.github.io/posts/my-first-post/</link>

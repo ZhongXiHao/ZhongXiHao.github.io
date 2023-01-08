@@ -1,11 +1,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Posts on Midsnk</title>
-		<link>https://ZhongXiHao.github.io/posts/</link>
+		<link>https://zhongxihao.github.io/posts/</link>
 		<description>Recent content in Posts on Midsnk</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<atom:link href="https://ZhongXiHao.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Sun, 08 Jan 2023 00:46:15 +0800</lastBuildDate>
+		<atom:link href="https://zhongxihao.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>My First Post</title>
+			<link>https://zhongxihao.github.io/posts/my-first-post/</link>
+			<pubDate>Sun, 08 Jan 2023 00:46:15 +0800</pubDate>
+			
+			<guid>https://zhongxihao.github.io/posts/my-first-post/</guid>
+			<description>Here is the first post of my blog. I don&amp;rsquo;t know how long will it update, so Let nature take its course. I am very excited to create my own website, but it does not public. Emm&amp;hellip; Just record the life and some interest.</description>
+			<content type="html"><![CDATA[<p>Here is the first post of my blog.</p>
+<p>I don&rsquo;t know how long will it update, so Let nature take its course.<br>
+I am very excited to create my own website, but it does not public.</p>
+<p>Emm&hellip; Just record the life and some interest.</p>
+]]></content>
+		</item>
 		
 	</channel>
 </rss>
