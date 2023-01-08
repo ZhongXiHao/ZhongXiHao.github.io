@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 08 Jan 2023 00:46:15 +0800</lastBuildDate><atom:link href="https://zhongxihao.github.io/tags/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Jan 2023 00:10:46 +0800</lastBuildDate><atom:link href="https://zhongxihao.github.io/tags/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tired Day</title>
+      <link>https://zhongxihao.github.io/posts/tired-day/</link>
+      <pubDate>Mon, 09 Jan 2023 00:10:46 +0800</pubDate>
+      
+      <guid>https://zhongxihao.github.io/posts/tired-day/</guid>
+      <description>明天还要练习，希望不会死掉。 长风破浪会有时，直挂云帆济沧海！</description>
+    </item>
+    
     <item>
       <title>My First Post</title>
       <link>https://zhongxihao.github.io/posts/my-first-post/</link>
@@ -15,15 +24,6 @@
       
       <guid>https://zhongxihao.github.io/posts/my-first-post/</guid>
       <description>Here is the first post of my blog. I don&amp;rsquo;t know how long will it update, so Let nature take its course. I am very excited to create my own website, but it does not public. Emm&amp;hellip; Just record the life and some interest.</description>
-    </item>
-    
-    <item>
-      <title>Tired Day</title>
-      <link>https://zhongxihao.github.io/posts/tired-day/</link>
-      <pubDate>Sun, 08 Jan 2023 00:46:15 +0800</pubDate>
-      
-      <guid>https://zhongxihao.github.io/posts/tired-day/</guid>
-      <description>明天还要练习，希望不会死掉。 长风破浪会有时，直挂云帆济沧海！</description>
     </item>
     
   </channel>
