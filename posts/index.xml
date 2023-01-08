@@ -23,5 +23,17 @@ I am very excited to create my own website, but it does not public.</p>
 ]]></content>
 		</item>
 		
+		<item>
+			<title>Tired Day</title>
+			<link>https://zhongxihao.github.io/posts/tired-day/</link>
+			<pubDate>Sun, 08 Jan 2023 00:46:15 +0800</pubDate>
+			
+			<guid>https://zhongxihao.github.io/posts/tired-day/</guid>
+			<description>明天还要练习，希望不会死掉。 长风破浪会有时，直挂云帆济沧海！</description>
+			<content type="html"><![CDATA[<p>明天还要练习，希望不会死掉。</p>
+<p>长风破浪会有时，直挂云帆济沧海！</p>
+]]></content>
+		</item>
+		
 	</channel>
 </rss>
