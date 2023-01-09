@@ -7,14 +7,19 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="theme-color" content="#494f5c">
 	<meta name="msapplication-TileColor" content="#494f5c">
-<meta itemprop="name" content="posts">
-<meta itemprop="description" content=""><meta property="og:title" content="posts" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://zhongxihao.github.io/tags/posts/" />
+<meta itemprop="name" content="最小值与两点距离">
+<meta itemprop="description" content="已知：$x&#43;y=12$，求$\sqrt{{x}^2&#43;4}&#43;\sqrt{{y}^2&#43;9}$ 的最小值. 这里使用一种比较特殊的解法：解析几何中的两"><meta itemprop="datePublished" content="2023-01-09T23:46:45+08:00" />
+<meta itemprop="dateModified" content="2023-01-09T23:46:45+08:00" />
+<meta itemprop="wordCount" content="410">
+<meta itemprop="keywords" content="posts," /><meta property="og:title" content="最小值与两点距离" />
+<meta property="og:description" content="已知：$x&#43;y=12$，求$\sqrt{{x}^2&#43;4}&#43;\sqrt{{y}^2&#43;9}$ 的最小值. 这里使用一种比较特殊的解法：解析几何中的两" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhongxihao.github.io/maths/%E6%9C%80%E5%B0%8F%E5%80%BC%E4%B8%8E%E4%B8%A4%E7%82%B9%E8%B7%9D%E7%A6%BB/" /><meta property="article:section" content="maths" />
+<meta property="article:published_time" content="2023-01-09T23:46:45+08:00" />
+<meta property="article:modified_time" content="2023-01-09T23:46:45+08:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="posts"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="最小值与两点距离"/>
+<meta name="twitter:description" content="已知：$x&#43;y=12$，求$\sqrt{{x}^2&#43;4}&#43;\sqrt{{y}^2&#43;9}$ 的最小值. 这里使用一种比较特殊的解法：解析几何中的两"/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -23,9 +28,9 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
 	<link rel="shortcut icon" href="/favicon.ico">
 
-	<title>posts</title>
-	<link rel="alternate" type="application/rss+xml" href="https://zhongxihao.github.io/tags/posts/index.xml" title="posts" />
+	<title>最小值与两点距离</title>
 	<link rel="stylesheet" href="https://zhongxihao.github.io/css/style.min.037b6ee8f8c1baab6a3d0a9da11c3ff18a7552471f16c59fd98538d5ce99208b.css" integrity="sha256-A3tu6PjBuqtqPQqdoRw/8Yp1UkcfFsWf2YU41c6ZIIs=" crossorigin="anonymous">
+	
 </head>
 
 <body id="page">
@@ -96,29 +101,18 @@ code.has-jax {
 
 
 	<main class="site-main section-inner thin animated fadeIn faster">
-		<h1>posts</h1>
-		<div class="posts-group">
-			<div class="post-year" id="2023">2023</div>
-			<ul class="posts-list">
-				<li class="post-item">
-					<a href="https://zhongxihao.github.io/maths/%E6%9C%80%E5%B0%8F%E5%80%BC%E4%B8%8E%E4%B8%A4%E7%82%B9%E8%B7%9D%E7%A6%BB/">
-						<span class="post-title">最小值与两点距离</span>
-						<span class="post-day">Jan 9</span>
-					</a>
-				</li>
-				<li class="post-item">
-					<a href="https://zhongxihao.github.io/posts/tired-day/">
-						<span class="post-title">Tired Day</span>
-						<span class="post-day">Jan 9</span>
-					</a>
-				</li>
-				<li class="post-item">
-					<a href="https://zhongxihao.github.io/posts/my-first-post/">
-						<span class="post-title">My First Post</span>
-						<span class="post-day">Jan 8</span>
-					</a>
-				</li>
-			</ul>
+		<h1>最小值与两点距离</h1>
+		<div class="content">
+			<p>已知：$x+y=12$，求$\sqrt{{x}^2+4}+\sqrt{{y}^2+9}$ 的最小值.</p>
+<p>这里使用一种比较特殊的解法：解析几何中的两点距离公式.</p>
+<p>将$y=12-x$ 代入 $\sqrt{x^2+4}+\sqrt{y^2+9}$，得：
+$\sqrt{x^2+4}+\sqrt{\left(x-12\right)^2+9}$.</p>
+<p>配成两点距离公式：$\sqrt{\left(x-0\right)^2+\left(0-2\right)^2}+\sqrt{\left(x-12\right)^2+\left(0-3\right)^2}$.</p>
+<p>进行数形结合易知上式是点$(x,\ 0)$到点$(0,\ 2)$和点$(12,\ 3)$的距离之和.</p>
+<p>作点$(12,\ 3)$的对称点$(12,\ -3)$，不难发现，当$(x,\ 0)$位于点$(0,\ 2)$和对称点$(12,\ -3)$的连线上时，距离之和最小 <a href="https://www.geogebra.org/classic/wv2zpcza">https://www.geogebra.org/classic/wv2zpcza</a>.</p>
+<p>故其距离之和最小值为点$(0,\ 2)$和点$(12,\ -3)$的距离，即13.</p>
+<p>等号成立条件为$x=\dfrac{24}{5},\ y=\dfrac{36}{5}$.</p>
+
 		</div>
 	</main>
 

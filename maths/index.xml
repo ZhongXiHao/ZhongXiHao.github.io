@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maths on Midsnk</title>
+    <link>https://zhongxihao.github.io/maths/</link>
+    <description>Recent content in Maths on Midsnk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 09 Jan 2023 23:46:45 +0800</lastBuildDate><atom:link href="https://zhongxihao.github.io/maths/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>最小值与两点距离</title>
+      <link>https://zhongxihao.github.io/maths/%E6%9C%80%E5%B0%8F%E5%80%BC%E4%B8%8E%E4%B8%A4%E7%82%B9%E8%B7%9D%E7%A6%BB/</link>
+      <pubDate>Mon, 09 Jan 2023 23:46:45 +0800</pubDate>
+      
+      <guid>https://zhongxihao.github.io/maths/%E6%9C%80%E5%B0%8F%E5%80%BC%E4%B8%8E%E4%B8%A4%E7%82%B9%E8%B7%9D%E7%A6%BB/</guid>
+      <description>已知：$x+y=12$，求$\sqrt{{x}^2+4}+\sqrt{{y}^2+9}$ 的最小值. 这里使用一种比较特殊的解法：解析几何中的两</description>
+    </item>
+    
+  </channel>
+</rss>
