@@ -7,16 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 09 Jan 2023 23:46:45 +0800</lastBuildDate><atom:link href="https://zhongxihao.github.io/tags/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>最小值与两点距离</title>
-      <link>https://zhongxihao.github.io/maths/%E6%9C%80%E5%B0%8F%E5%80%BC%E4%B8%8E%E4%B8%A4%E7%82%B9%E8%B7%9D%E7%A6%BB/</link>
-      <pubDate>Mon, 09 Jan 2023 23:46:45 +0800</pubDate>
-      
-      <guid>https://zhongxihao.github.io/maths/%E6%9C%80%E5%B0%8F%E5%80%BC%E4%B8%8E%E4%B8%A4%E7%82%B9%E8%B7%9D%E7%A6%BB/</guid>
-      <description>已知：$x+y=12$，求$\sqrt{{x}^2+4}+\sqrt{{y}^2+9}$ 的最小值. 这里使用一种比较特殊的解法：解析几何中的两</description>
-    </item>
-    
+    <lastBuildDate>Mon, 09 Jan 2023 00:10:46 +0800</lastBuildDate><atom:link href="https://zhongxihao.github.io/tags/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tired Day</title>
       <link>https://zhongxihao.github.io/posts/tired-day/</link>
