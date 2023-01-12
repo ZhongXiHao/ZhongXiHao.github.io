@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="Mean and Weighted Mean Inequalities">
+<meta itemprop="description" content="https://imomath.com/index.cgi?page=inequalitiesMeanMinkowskiHolder Mean inequalities 众所周知对于$a_1,\ a_2,\ \cdots,\ a_n \in \mathbb{R}^&#43;$， 算术平均数为：$A(a_1,a_2,\dots, a_n)=\dfrac{a"><meta itemprop="datePublished" content="2023-01-11T22:19:52+08:00" />
+<meta itemprop="dateModified" content="2023-01-11T22:19:52+08:00" />
+<meta itemprop="wordCount" content="798">
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Mean and Weighted Mean Inequalities" />
+<meta property="og:description" content="https://imomath.com/index.cgi?page=inequalitiesMeanMinkowskiHolder Mean inequalities 众所周知对于$a_1,\ a_2,\ \cdots,\ a_n \in \mathbb{R}^&#43;$， 算术平均数为：$A(a_1,a_2,\dots, a_n)=\dfrac{a" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhongxihao.github.io/maths/mean-and-weighted-mean-inequalities/" /><meta property="article:section" content="maths" />
+<meta property="article:published_time" content="2023-01-11T22:19:52+08:00" />
+<meta property="article:modified_time" content="2023-01-11T22:19:52+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mean and Weighted Mean Inequalities"/>
+<meta name="twitter:description" content="https://imomath.com/index.cgi?page=inequalitiesMeanMinkowskiHolder Mean inequalities 众所周知对于$a_1,\ a_2,\ \cdots,\ a_n \in \mathbb{R}^&#43;$， 算术平均数为：$A(a_1,a_2,\dots, a_n)=\dfrac{a"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Mean and Weighted Mean Inequalities</title>
+	<link rel="stylesheet" href="https://zhongxihao.github.io/css/style.min.037b6ee8f8c1baab6a3d0a9da11c3ff18a7552471f16c59fd98538d5ce99208b.css" integrity="sha256-A3tu6PjBuqtqPQqdoRw/8Yp1UkcfFsWf2YU41c6ZIIs=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://zhongxihao.github.io/">Midsnk</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://zhongxihao.github.io/posts/">Posts</a>
+				<a href="https://zhongxihao.github.io/maths/">Maths</a>
+				<a href="https://zhongxihao.github.io/notes/">Notes</a>
+				<a href="https://zhongxihao.github.io/about-hugo/">About</a>
+
+					<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://www.instagram.com/mid_snk/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/ZhongXiHao" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://zhongxihao.github.io/posts/">Posts</a></li>
+			<li><a href="https://zhongxihao.github.io/maths/">Maths</a></li>
+			<li><a href="https://zhongxihao.github.io/notes/">Notes</a></li>
+			<li><a href="https://zhongxihao.github.io/about-hugo/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner thin animated fadeIn faster">
+		<h1>Mean and Weighted Mean Inequalities</h1>
+		<div class="content">
+			<p><a href="https://imomath.com/index.cgi?page=inequalitiesMeanMinkowskiHolder">https://imomath.com/index.cgi?page=inequalitiesMeanMinkowskiHolder</a></p>
+<h1 id="mean-inequalities">Mean inequalities<a href="#mean-inequalities" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h1>
+<p>众所周知对于$a_1,\ a_2,\ \cdots,\ a_n \in \mathbb{R}^+$，
+算术平均数为：$A(a_1,a_2,\dots, a_n)=\dfrac{a_1+a_2+\cdots+a_n}n$，\
+几何平均数为：$G(a_1, a_2,\dots, a_n)=\sqrt[n]{a_1a_2\cdots a_n}$，
+调和平均数为：$H(x_1,\dots, x_n)=\dfrac{n}{\dfrac1{x_1}+\cdots+\dfrac1{x_n}}$，\
+平方平均数为：$Q(x_1,\dots, x_n)=\sqrt{\dfrac{x_1^2+\cdots+x_n^2}n}$。
+他们间的关系如下：
+$$Q(x_1,\dots, x_n)\geq A(x_1,\dots, x_n)\geq G(x_1,\dots, x_n)\geq H(x_1,\dots, x_n)$$
+等号成立条件为：$x_1=\dots=x_n$</p>
+<p>下面，将使用一个函数概括上述四个不等式
+$$
+M_r(x)= \begin{cases}\left(\dfrac{x_1^r+x_2^r+\cdots+x_n^r}{n}\right)^{\dfrac{1}{r}} &amp; \text { if } r \neq 0 \ \sqrt[n]{x_1 x_2 \cdots x_n} &amp; \text { if } r=0\end{cases}
+$$</p>
+<p>当$r=-1,\ 0,\ 1,\ 2$时分别为调和平均数，几何平均数，算术平均数，平方平均数</p>
+<p>$\textbf{更一般地，对于任意$\mathbf{a\leq b}$，有$\mathbf{M_a(x) \leq M_b(x)}$}$</p>
+<p>下证明当$r=0$时为几何平均数：</p>
+<p>$$M_r(x) = \left(\dfrac{x_1^r+x_2^r+\cdots+x_n^r}{n}\right)^{\dfrac{1}{r}} = e^{\dfrac{1}{r}\ln \left(\dfrac{x_1^r+x_2^r+\cdots+x_n^r}{n} \right)}$$</p>
+<p>由洛必达法则可知：
+$$
+\begin{aligned}
+\lim _{r \rightarrow 0} \dfrac{1}{r}\ln \left(\dfrac{x_1^r+x_2^r+\cdots+x_n^r}{n} \right) &amp;=\lim _{r \rightarrow 0} \dfrac{\dfrac{1}{n} \left( x_1^r \ln x_1+\cdots+x_n^r \ln a_n \right)}{\left(\dfrac{x_1^r+x_2^r+\cdots+x_n^r}{n} \right)} \
+&amp;=\dfrac{1}{n} \left(  \ln x_1+\cdots+\ln x_n \right) \
+&amp;=\ln \left(x_1 \cdots x_n\right)^{\dfrac{1}{n}} .
+\end{aligned}
+$$</p>
+<p>$\textbf{注：}$第一个等号需要用到复合函数求导</p>
+<p>$\therefore  r=0$时 $M_0(r) = \sqrt[n]{x_1 x_2 \cdots x_n}$</p>
+<h1 id="weighted-mean-inequalities">Weighted mean inequalities<a href="#weighted-mean-inequalities" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h1>
+<p>现在考虑更为一般的加权情况，设$m_1,\ m_2,\ \cdots,\ m_n \in \textbf{R}^{+}$，且$m_1+m_2+\cdots +m_n = 1$
+$$
+M_r(x)= \begin{cases}\left(x_1^r m_1+x_2^r m_2+\cdots+x_n^r m_n\right)^{\dfrac{1}{r}} &amp; \text { if } r \neq 0 \ x_1^{m_1} x_2^{m_2} \cdots x_n^{m_n} &amp; \text { if } r=0\end{cases}
+$$</p>
+<p>同样地，对于任意$a\leq b$，有$M_a(x) \leq M_b(x)$</p>
+<p>而对于$r=0$的时候，证明类似于1。</p>
+<h1 id="problems">Problems<a href="#problems" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h1>
+<p>Problem 1 (Young’s inequality)<br>
+设$a,\ b,\ p,\ q \in \mathbb{R}^+$，且$\dfrac{1}{p}+\dfrac{1}{q}=1$，求证：</p>
+<p>$$\dfrac{a^p}p+\dfrac{b^q}q\geq ab$$</p>
+<p>Problem 2<br>
+设$a,\ b,\ c, \in \mathbb{R}^+$，求证：</p>
+<p>$$\dfrac{a^2+b^2+c^2}{a+b+c}\geq \left(a^a b^b c^c\right)^{\dfrac1{a+b+c}}$$</p>
+<p>Problem 3<br>
+设$a,\ b,\ c, \in \mathbb{R}^+$，求证：
+$$\dfrac{(b+c)^a(c+a)^b(a+b)^c}{2^{a+b+c}}\leq \left(\dfrac{a+b+c}3\right)^{a+b+c}\leq a^ab^bc^c.$$</p>
+
+		</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2023 <a href="https://zhongxihao.github.io/">Midsnk</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://zhongxihao.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://zhongxihao.github.io/js/bundle.min.580988ed2982bcbb74a1773c7abea97b43e4c43b9324e10cda0813ec6ec4bb67.js" integrity="sha256-WAmI7SmCvLt0oXc8er6pe0PkxDuTJOEM2ggT7G7Eu2c=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>
