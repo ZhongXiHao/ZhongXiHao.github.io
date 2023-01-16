@@ -7,14 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 11 Jan 2023 22:19:52 +0800</lastBuildDate><atom:link href="https://zhongxihao.github.io/maths/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Jan 2023 23:54:38 +0800</lastBuildDate><atom:link href="https://zhongxihao.github.io/maths/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mean and Weighted Mean Inequalities</title>
-      <link>https://zhongxihao.github.io/maths/mean-and-weighted-mean-inequalities/</link>
-      <pubDate>Wed, 11 Jan 2023 22:19:52 +0800</pubDate>
+      <title>MACMO 2023</title>
+      <link>https://zhongxihao.github.io/maths/macmo-2023/</link>
+      <pubDate>Mon, 16 Jan 2023 23:54:38 +0800</pubDate>
       
-      <guid>https://zhongxihao.github.io/maths/mean-and-weighted-mean-inequalities/</guid>
-      <description>https://imomath.com/index.cgi?page=inequalitiesMeanMinkowskiHolder Mean inequalities 众所周知对于$a_1,\ a_2,\ \cdots,\ a_n \in \mathbb{R}^+$， 算术平均数为：$A(a_1,a_2,\dots, a_n)=\dfrac{a</description>
+      <guid>https://zhongxihao.github.io/maths/macmo-2023/</guid>
+      <description>共有12题，其中题1-5题为填空题，6-12为证明题。1-7题每题10分，8-12题每题20分. $\textbf{Problem 1. }$ 求$\tan 15^{\circ}$的值</description>
     </item>
     
     <item>
