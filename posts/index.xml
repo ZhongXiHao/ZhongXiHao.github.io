@@ -4,20 +4,122 @@
 		<link>https://zhongxihao.github.io/posts/</link>
 		<description>Recent content in Posts on Midsnk</description>
 		<generator>Hugo -- gohugo.io</generator>
-		<language>en-us</language>
+		<language>zh-Hans</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Mon, 09 Jan 2023 00:10:46 +0800</lastBuildDate>
+		<lastBuildDate>Fri, 27 Jan 2023 21:26:34 +0800</lastBuildDate>
 		<atom:link href="https://zhongxihao.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
-			<title>Tired Day</title>
-			<link>https://zhongxihao.github.io/posts/tired-day/</link>
-			<pubDate>Mon, 09 Jan 2023 00:10:46 +0800</pubDate>
+			<title>Train in 2023</title>
+			<link>https://zhongxihao.github.io/posts/train-in-2023/</link>
+			<pubDate>Fri, 27 Jan 2023 21:26:34 +0800</pubDate>
 			
-			<guid>https://zhongxihao.github.io/posts/tired-day/</guid>
-			<description>明天还要练习，希望不会死掉。 长风破浪会有时，直挂云帆济沧海！</description>
-			<content type="html"><![CDATA[<p>明天还要练习，希望不会死掉。
-长风破浪会有时，直挂云帆济沧海！</p>
+			<guid>https://zhongxihao.github.io/posts/train-in-2023/</guid>
+			<description>Here is an album of assemble for training in 2023. Last modified at 22:19 27/1/2023. Start at 27/1/2023, end at 31/1/2023. First day afternoon</description>
+			<content type="html"><![CDATA[<p>Here is an album of assemble for training in 2023. Last modified at 22:19 27/1/2023.</p>
+<p>Start at 27/1/2023, end at 31/1/2023.</p>
+<p><figure>
+<center>
+<img src="/img/Train-in-2023/1a.jpg" alt="First day afternoon">
+<figcaption>First day afternoon</figcaption>
+</center>
+</figure></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>MACMO 2023</title>
+			<link>https://zhongxihao.github.io/posts/macmo-2023/</link>
+			<pubDate>Mon, 16 Jan 2023 23:54:38 +0800</pubDate>
+			
+			<guid>https://zhongxihao.github.io/posts/macmo-2023/</guid>
+			<description>共有12题，其中题1-5题为填空题，6-12为证明题。1-7题每题10分，8-12题每题20分. $\textbf{Problem 1. }$ 求$\tan 15^{\circ}$的值</description>
+			<content type="html"><![CDATA[<p>共有12题，其中题1-5题为填空题，6-12为证明题。1-7题每题10分，8-12题每题20分.</p>
+<hr>
+<p>$\textbf{Problem 1. }$ 求$\tan 15^{\circ}$的值.</p>
+<p>$Solution. $ 由正切函数的二倍角公式可得$\tan 30^{\circ} = \dfrac{2 \tan 15^{\circ}}{1-\tan ^2 15^{\circ}}$，</p>
+<p>解得$\tan 15^{\circ} = 2-\sqrt{3}$.</p>
+<p>$\textbf{Problem 2. }$ 已知$xy \neq1$，$yz \neq1$，$zx \neq1$，$xyz \neq1$，求
+$$\dfrac{1}{\log_{xy}{xyz}}+\dfrac{1}{\log_{yz}{xyz}}+\dfrac{1}{\log_{zx}{xyz}}.$$</p>
+<p>$Solution.$ 由对数的性质可知
+$$\dfrac{1}{\log_{xy}{xyz}}=\log_{xyz}{xy},\ \dfrac{1}{\log_{yz}{xyz}}=\log_{xyz}{yz},\ \dfrac{1}{\log_{zx}{xyz}}=\log_{xyz}{zx}$$
+则题目可转化为求$\log_{xyz}{xy}+\log_{xyz}{yz}+\log_{xyz}{zx}$的值，即$\log_{xyz}{xyz}^2$，易知答案为2.</p>
+<p>$\textbf{Problem 3. }$ 已知$\tan^{-1}x+\tan^{-1}y+\tan^{-1}z = \pi$，求$\dfrac{1}{xy}+\dfrac{1}{yz}+\dfrac{1}{zx}$的值.</p>
+<p>$Solution.$ $\tan^{-1}x+\tan^{-1}y+\tan^{-1}z = \pi \Rightarrow \tan^{-1}y+\tan^{-1}z = \pi-\tan^{-1}x $</p>
+<p>$\Rightarrow \tan \left( \tan^{-1}y+\tan^{-1}z\right) = \tan \left( \pi-\tan^{-1}x\right) \Rightarrow \dfrac{y+z}{1-yz} = \dfrac{0-x}{1+0}\ $</p>
+<p>$\Rightarrow x+y+z=xyz\Rightarrow \dfrac{1}{xy}+\dfrac{1}{yz}+\dfrac{1}{zx}=1$，故答案为1。</p>
+<p>$\textbf{Problem 4. }$</p>
+<p>$Solution.$</p>
+<p>$\textbf{Problem 5. }$ 已知$a,\ b,\ c \in R^+$，求$\dfrac{bc}{2a^2+bc}+\dfrac{ca}{2b^2+ca}+\dfrac{ab}{2c^2+ab}$的最小值.</p>
+<p>$Solution.$ 由$a^3+b^3+c^3 \geq 3abc$ 可得 $2a^4bc+2ab^4c+2abc^4 \geq 6a^2b^2c^2$</p>
+<p>$\Rightarrow \sum_{cyc}\left( 4b^3c^3 + 2ab^4c + 2abc^4 + a^2b^2c^2 \right) \geq $$$$2a^4bc+2ab^4c+2abc^4+4\left(ab\right)^3+4\left(bc\right)^3+4\left(ca\right)^3+9\left(abc \right)^3$$</p>
+<p>$\Rightarrow \sum_{cyc} \left[bc\left(2b^2+ca\right)\left(2a^2+bc\right)\right] \geq \left(2a^2+bc\right)\left(2b^2+ca\right)\left(2c^2+ab\right)$</p>
+<p>$\Rightarrow \sum_{cyc} \left[bc\left(2b^2+ca\right)\left(2a^2+bc\right)\right] \geq \left(2a^2+bc\right)\left(2b^2+ca\right)\left(2c^2+ab\right)$</p>
+<p>$\Rightarrow \dfrac{bc}{2a^2+bc}+\dfrac{ca}{2b^2+ca}+\dfrac{ab}{2c^2+ab} \geq 1$，故答案为1.</p>
+<p>$\textbf{Problem 6. }$ 已知凸四边形$ABCD$，求证</p>
+<p>$$max(AB+CD,\ AD+BC) &lt; AC+BD &lt; AB+BC+CD+DA.$$</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>切线法求最值</title>
+			<link>https://zhongxihao.github.io/posts/%E5%88%87%E7%BA%BF%E6%B3%95%E6%B1%82%E6%9C%80%E5%80%BC/</link>
+			<pubDate>Tue, 10 Jan 2023 22:15:19 +0800</pubDate>
+			
+			<guid>https://zhongxihao.github.io/posts/%E5%88%87%E7%BA%BF%E6%B3%95%E6%B1%82%E6%9C%80%E5%80%BC/</guid>
+			<description>切线法用于易猜到等号成立的条件的不等式问题 步骤 假设函数$f(x)$，并求出其导数$f^{&amp;rsquo;}(x)$。代入等号成立条件. 得出该点</description>
+			<content type="html"><![CDATA[<p>切线法用于易猜到等号成立的条件的不等式问题</p>
+<hr>
+<h2 id="步骤">步骤</h2>
+<ol>
+<li>
+<p>假设函数$f(x)$，并求出其导数$f^{&rsquo;}(x)$。代入等号成立条件.</p>
+</li>
+<li>
+<p>得出该点的切线斜率，并列出点斜式，代入该点.</p>
+</li>
+<li>
+<p>按照题目的符号填入并累加即可.</p>
+</li>
+</ol>
+<h2 id="例题">例题</h2>
+<ol>
+<li>已知$a,\ b,\ c\in R^+$，且$a+b+c = 3$，求证：$\dfrac{1}{a^2+a}+\dfrac{1}{b^2+b}+\dfrac{1}{c^2+c}\geq \dfrac{3}{2}$.</li>
+</ol>
+<p>$\textbf{证明}$：设$f(x) = \dfrac{1}{x^2+x}$，则$f^{&rsquo;}(x) = -\dfrac{2x+1}{\left(x^2+x\right)^2}$，</p>
+<p>不难猜到等号成立条件为$a=b=c=1$，代入$x=1$得$f^{&rsquo;}(1)=-\dfrac{3}{4}$.</p>
+<p>设该点的切线方程为$y-y_0 = -\dfrac{3}{4}\left(x-x_0\right)$，代入$x_0=1,\ y_0=\dfrac{1}{2}$，得$y=-\dfrac{3}{4}x+\dfrac{5}{4}$.</p>
+<p>由此得出$\dfrac{1}{x^2+x}\geq -\dfrac{3}{4}x+\dfrac{5}{4}$.</p>
+<p>$\therefore \sum_{cyc} \dfrac{1}{a^2+a} \geq -\dfrac{3}{4}\sum_{cyc}a+\dfrac{15}{4}=\dfrac{3}{2}$.</p>
+<h2 id="习题">习题</h2>
+<ol>
+<li>已知$a,\ b,\ c\in R^+$，且$abc=1$，求证：$\dfrac{1}{a^2+a}+\dfrac{1}{b^2+b}+\dfrac{1}{c^2+c}\geq \dfrac{3}{2}$.</li>
+</ol>
+<p>$\textbf{证明}$：$LHS = \dfrac{\left(bc\right)^2}{1+bc}+\dfrac{\left(ac\right)^2}{1+ac}+\dfrac{\left(ab\right)^2}{1+ab}$，即证$\sum_{cyc} \dfrac{\left(ab\right)^2}{1+ab} \geq \dfrac{3}{2}$.</p>
+<p>设$f(x) = \dfrac{x^2}{x+1}$，则$f^{&rsquo;}(x) = \dfrac{x^2+2x}{\left(x+1\right)^2}=1-\dfrac{1}{\left(x+1\right)^2}$，</p>
+<p>不难猜到等号成立条件为$ab=bc=ac=1$，代入$x=1$得$f^{&rsquo;}(1)=\dfrac{3}{4}$.</p>
+<p>设该点的切线方程为$y-y_0 = \dfrac{3}{4}\left(x-x_0\right)$，代入$x_0=1,\ y_0=\dfrac{1}{2}$，得$y=\dfrac{3}{4}x-\dfrac{1}{4}$.</p>
+<p>由此得出$\dfrac{x^2}{x+1}\geq \dfrac{3}{4}x-\dfrac{1}{4}$.</p>
+<p>$\therefore \sum_{cyc} \dfrac{\left(ab\right)^2}{1+ab} \geq \dfrac{3}{4}\sum_{cyc}bc-\dfrac{3}{4}\geq \dfrac{3}{4}\cdot3\sqrt[3]{a^2b^2c^2} -\dfrac{3}{4}=\dfrac{3}{2}$.</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>最小值与两点距离</title>
+			<link>https://zhongxihao.github.io/posts/%E6%9C%80%E5%B0%8F%E5%80%BC%E4%B8%8E%E4%B8%A4%E7%82%B9%E8%B7%9D%E7%A6%BB/</link>
+			<pubDate>Mon, 09 Jan 2023 23:46:45 +0800</pubDate>
+			
+			<guid>https://zhongxihao.github.io/posts/%E6%9C%80%E5%B0%8F%E5%80%BC%E4%B8%8E%E4%B8%A4%E7%82%B9%E8%B7%9D%E7%A6%BB/</guid>
+			<description>已知：$x+y=12$，求$\sqrt{{x}^2+4}+\sqrt{{y}^2+9}$ 的最小值. 这里使用一种比较特殊的解法：解析几何中的两</description>
+			<content type="html"><![CDATA[<p>已知：$x+y=12$，求$\sqrt{{x}^2+4}+\sqrt{{y}^2+9}$ 的最小值.</p>
+<p>这里使用一种比较特殊的解法：解析几何中的两点距离公式.</p>
+<p>将$y=12-x$ 代入 $\sqrt{x^2+4}+\sqrt{y^2+9}$，得：
+$\sqrt{x^2+4}+\sqrt{\left(x-12\right)^2+9}$.</p>
+<p>配成两点距离公式：$\sqrt{\left(x-0\right)^2+\left(0-2\right)^2}+\sqrt{\left(x-12\right)^2+\left(0-3\right)^2}$.</p>
+<p>进行数形结合易知上式是点$(x,\ 0)$到点$(0,\ 2)$和点$(12,\ 3)$的距离之和.</p>
+<p>作点$(12,\ 3)$的对称点$(12,\ -3)$，不难发现，当$(x,\ 0)$位于点$(0,\ 2)$和对称点$(12,\ -3)$的连线上时，距离之和最小 （<a href="https://www.geogebra.org/classic/wv2zpcza">图片</a>）.</p>
+<p>故其距离之和最小值为点$(0,\ 2)$和点$(12,\ -3)$的距离，即13.</p>
+<p>等号成立条件为$x=\dfrac{24}{5},\ y=\dfrac{36}{5}$.</p>
 ]]></content>
 		</item>
 		

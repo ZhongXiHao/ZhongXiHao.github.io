@@ -5,22 +5,49 @@
     <link>https://zhongxihao.github.io/tags/</link>
     <description>Recent content in Tags on Midsnk</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-Hans</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 09 Jan 2023 23:46:45 +0800</lastBuildDate><atom:link href="https://zhongxihao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Jan 2023 21:26:34 +0800</lastBuildDate><atom:link href="https://zhongxihao.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>maths</title>
+      <title>Memories</title>
+      <link>https://zhongxihao.github.io/tags/memories/</link>
+      <pubDate>Fri, 27 Jan 2023 21:26:34 +0800</pubDate>
+      
+      <guid>https://zhongxihao.github.io/tags/memories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TFs</title>
+      <link>https://zhongxihao.github.io/tags/tfs/</link>
+      <pubDate>Fri, 27 Jan 2023 21:26:34 +0800</pubDate>
+      
+      <guid>https://zhongxihao.github.io/tags/tfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maths</title>
       <link>https://zhongxihao.github.io/tags/maths/</link>
-      <pubDate>Mon, 09 Jan 2023 23:46:45 +0800</pubDate>
+      <pubDate>Mon, 16 Jan 2023 23:54:38 +0800</pubDate>
       
       <guid>https://zhongxihao.github.io/tags/maths/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>posts</title>
+      <title>Notes</title>
+      <link>https://zhongxihao.github.io/tags/notes/</link>
+      <pubDate>Mon, 16 Jan 2023 23:54:38 +0800</pubDate>
+      
+      <guid>https://zhongxihao.github.io/tags/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Posts</title>
       <link>https://zhongxihao.github.io/tags/posts/</link>
-      <pubDate>Mon, 09 Jan 2023 00:10:46 +0800</pubDate>
+      <pubDate>Sun, 08 Jan 2023 00:46:15 +0800</pubDate>
       
       <guid>https://zhongxihao.github.io/tags/posts/</guid>
       <description></description>

@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>posts on Midsnk</title>
+    <title>Posts on Midsnk</title>
     <link>https://zhongxihao.github.io/tags/posts/</link>
-    <description>Recent content in posts on Midsnk</description>
+    <description>Recent content in Posts on Midsnk</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-Hans</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 09 Jan 2023 00:10:46 +0800</lastBuildDate><atom:link href="https://zhongxihao.github.io/tags/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Tired Day</title>
-      <link>https://zhongxihao.github.io/posts/tired-day/</link>
-      <pubDate>Mon, 09 Jan 2023 00:10:46 +0800</pubDate>
-      
-      <guid>https://zhongxihao.github.io/posts/tired-day/</guid>
-      <description>明天还要练习，希望不会死掉。 长风破浪会有时，直挂云帆济沧海！</description>
-    </item>
-    
+    <lastBuildDate>Sun, 08 Jan 2023 00:46:15 +0800</lastBuildDate><atom:link href="https://zhongxihao.github.io/tags/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
       <link>https://zhongxihao.github.io/posts/my-first-post/</link>
