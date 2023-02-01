@@ -14,7 +14,7 @@
       <pubDate>Wed, 01 Feb 2023 18:23:46 +0800</pubDate>
       
       <guid>https://zhongxihao.github.io/posts/%E9%A1%86%E7%B2%92%E7%8B%80%E4%BB%BB%E6%84%8F%E9%85%8D%E6%AF%94%E8%AA%BF%E9%85%8D%E6%A9%9F%E5%99%A8/</guid>
-      <description>最後一次編輯於 21:19 1/2/2023 簡介 本項目為顆粒狀任意配比調配機器，可以使兩種顆粒狀的物質進行任意比例地混合（各不超過300克），無需人手操作，只須輸入重</description>
+      <description>最後一次編輯於 22:26 1/2/2023 Table Of Contents 簡介 工具與材料 模塊功能介紹 液晶屏 MG90S舵機 按鈕 HX711 傳感器 + 壓力模塊 4x4 薄膜按鍵 使用方法 代碼（Arduino / Mixl</description>
     </item>
     
   </channel>

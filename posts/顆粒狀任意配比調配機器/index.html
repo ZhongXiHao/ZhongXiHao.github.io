@@ -8,18 +8,18 @@
 	<meta name="theme-color" content="#494f5c">
 	<meta name="msapplication-TileColor" content="#494f5c">
 <meta itemprop="name" content="顆粒狀任意配比調配機器">
-<meta itemprop="description" content="最後一次編輯於 21:19 1/2/2023 簡介 本項目為顆粒狀任意配比調配機器，可以使兩種顆粒狀的物質進行任意比例地混合（各不超過300克），無需人手操作，只須輸入重"><meta itemprop="datePublished" content="2023-02-01T18:23:46+08:00" />
+<meta itemprop="description" content="最後一次編輯於 22:26 1/2/2023 Table Of Contents 簡介 工具與材料 模塊功能介紹 液晶屏 MG90S舵機 按鈕 HX711 傳感器 &#43; 壓力模塊 4x4 薄膜按鍵 使用方法 代碼（Arduino / Mixl"><meta itemprop="datePublished" content="2023-02-01T18:23:46+08:00" />
 <meta itemprop="dateModified" content="2023-02-01T18:23:46+08:00" />
-<meta itemprop="wordCount" content="1508">
+<meta itemprop="wordCount" content="1621">
 <meta itemprop="keywords" content="Programmings," /><meta property="og:title" content="顆粒狀任意配比調配機器" />
-<meta property="og:description" content="最後一次編輯於 21:19 1/2/2023 簡介 本項目為顆粒狀任意配比調配機器，可以使兩種顆粒狀的物質進行任意比例地混合（各不超過300克），無需人手操作，只須輸入重" />
+<meta property="og:description" content="最後一次編輯於 22:26 1/2/2023 Table Of Contents 簡介 工具與材料 模塊功能介紹 液晶屏 MG90S舵機 按鈕 HX711 傳感器 &#43; 壓力模塊 4x4 薄膜按鍵 使用方法 代碼（Arduino / Mixl" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zhongxihao.github.io/posts/%E9%A1%86%E7%B2%92%E7%8B%80%E4%BB%BB%E6%84%8F%E9%85%8D%E6%AF%94%E8%AA%BF%E9%85%8D%E6%A9%9F%E5%99%A8/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-02-01T18:23:46+08:00" />
 <meta property="article:modified_time" content="2023-02-01T18:23:46+08:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="顆粒狀任意配比調配機器"/>
-<meta name="twitter:description" content="最後一次編輯於 21:19 1/2/2023 簡介 本項目為顆粒狀任意配比調配機器，可以使兩種顆粒狀的物質進行任意比例地混合（各不超過300克），無需人手操作，只須輸入重"/>
+<meta name="twitter:description" content="最後一次編輯於 22:26 1/2/2023 Table Of Contents 簡介 工具與材料 模塊功能介紹 液晶屏 MG90S舵機 按鈕 HX711 傳感器 &#43; 壓力模塊 4x4 薄膜按鍵 使用方法 代碼（Arduino / Mixl"/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -107,7 +107,28 @@ code.has-jax {
 				<h1>顆粒狀任意配比調配機器</h1>
 			</header>
 			<div class="content">
-				<p>最後一次編輯於 <em>21:19 1/2/2023</em></p>
+				<p>最後一次編輯於 <em>22:26 1/2/2023</em>
+<div>
+    <h2>Table Of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#簡介">簡介</a></li>
+    <li><a href="#工具與材料">工具與材料</a></li>
+    <li><a href="#模塊功能介紹">模塊功能介紹</a>
+      <ul>
+        <li><a href="#液晶屏">液晶屏</a></li>
+        <li><a href="#mg90s舵機">MG90S舵機</a></li>
+        <li><a href="#按鈕">按鈕</a></li>
+        <li><a href="#hx711-傳感器--壓力模塊">HX711 傳感器 + 壓力模塊</a></li>
+        <li><a href="#4x4-薄膜按鍵">4x4 薄膜按鍵</a></li>
+      </ul>
+    </li>
+    <li><a href="#使用方法">使用方法</a></li>
+    <li><a href="#代碼arduino--mixly">代碼（Arduino / Mixly）</a></li>
+    <li><a href="#參考資料">參考資料</a></li>
+  </ul>
+</nav>
+</div></p>
 <h2 id="簡介">簡介<a href="#簡介" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <p>本項目為顆粒狀任意配比調配機器，可以使兩種顆粒狀的物質進行任意比例地混合（各不超過300克），無需人手操作，只須輸入重量及比例即可。
 <figure>
@@ -141,6 +162,14 @@ code.has-jax {
 <figcaption>項目俯視圖</figcaption>
 </center>
 </figure></p>
+<h3 id="液晶屏">液晶屏<a href="#液晶屏" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>顯示輸入資料，進度等。</p>
+<h3 id="mg90s舵機">MG90S舵機<a href="#mg90s舵機" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>控制出口的開關。</p>
+<h3 id="按鈕">按鈕<a href="#按鈕" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>最左邊用於調高左瓶子內的顆粒物的比例；中間用於調高右瓶子內的顆粒物的比例（每次調高5%，且需要開啟D模式才可）。最右邊用於開始執行傾倒工作（若未輸入質量或左右瓶子比例之和不等於1，則無法執行）。</p>
+<h3 id="hx711-傳感器--壓力模塊">HX711 傳感器 + 壓力模塊<a href="#hx711-傳感器--壓力模塊" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>獲取當前質量。</p>
 <h3 id="4x4-薄膜按鍵">4x4 薄膜按鍵<a href="#4x4-薄膜按鍵" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p><strong>輸入資料，各個按鍵對應功能如下：</strong><br>
 數字鍵：輸入質量的數字；<br>
@@ -150,12 +179,6 @@ C鍵：自動輸入比例為1: 9，即左瓶子為10%，右瓶子為90%；<br>
 D鍵：開啟自定義調節比例；<br>
 *鍵：清零數字；<br>
 #鍵：刪除最後一個數字。</p>
-<h3 id="液晶顯示屏">液晶顯示屏<a href="#液晶顯示屏" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
-<p>顯示輸入資料，進度等。</p>
-<h3 id="按鈕">按鈕<a href="#按鈕" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
-<p>最左邊用於調高左瓶子內的顆粒物的比例；中間用於調高右瓶子內的顆粒物的比例（每次調高5%，且需要開啟D模式才可）。最右邊用於開始執行傾倒工作（若未輸入質量或左右瓶子比例之和不等於1，則無法執行）。</p>
-<h3 id="hx711-傳感器--壓力模塊">HX711 傳感器 + 壓力模塊<a href="#hx711-傳感器--壓力模塊" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
-<p>獲取當前質量。</p>
 <h2 id="使用方法">使用方法<a href="#使用方法" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <ol>
 <li>
@@ -207,7 +230,7 @@ D鍵：開啟自定義調節比例；<br>
 </figure></p>
 </li>
 </ol>
-<h2 id="代碼arduino-mixly">代碼（Arduino/ Mixly）<a href="#代碼arduino-mixly" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h2 id="代碼arduino--mixly">代碼（Arduino / Mixly）<a href="#代碼arduino--mixly" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;LiquidCrystal_I2C.h&gt;</span><span class="cp">
@@ -217,7 +240,7 @@ D鍵：開啟自定義調節比例；<br>
 </span></span><span class="line"><span class="cl"><span class="k">extern</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="nf">HX711_Read</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="k">extern</span> <span class="kt">long</span> <span class="nf">Get_Weight</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">///变量定义
+</span></span><span class="line"><span class="cl"><span class="c1">///定義變量
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">float</span> <span class="n">WEIGHT</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">HX711_SCK</span> <span class="o">=</span><span class="mi">2</span><span class="p">;</span>   <span class="c1">///     作為輸出口
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">HX711_DT</span><span class="o">=</span> <span class="mi">4</span><span class="p">;</span>    <span class="c1">///     作為輸入口
@@ -261,16 +284,16 @@ D鍵：開啟自定義調節比例；<br>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">Pour</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">Weight</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">CS</span> <span class="o">+</span> <span class="n">SF</span> <span class="o">&lt;</span> <span class="mi">100</span> <span class="o">||</span> <span class="n">Weight</span> <span class="o">&gt;=</span> <span class="mi">600</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">Weight</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">CS</span> <span class="o">+</span> <span class="n">SF</span> <span class="o">&lt;</span> <span class="mi">100</span> <span class="o">||</span> <span class="n">Weight</span> <span class="o">&gt;=</span> <span class="mi">600</span><span class="p">)</span><span class="c1">//質量為0、多於600g 或 比例之和為小於100均不執行傾倒
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="k">return</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="n">mylcd</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">    <span class="n">WEIGHT</span> <span class="o">=</span> <span class="n">Get_Weight</span><span class="p">();</span>  <span class="c1">//计算放在传感器上的重物重量
+</span></span><span class="line"><span class="cl">    <span class="n">WEIGHT</span> <span class="o">=</span> <span class="n">Get_Weight</span><span class="p">();</span>  <span class="c1">//計算放在感測器上的重物重量
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">mylcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">10</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="n">mylcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&#34;/ &#34;</span><span class="o">+</span><span class="n">String</span><span class="p">(</span><span class="n">Weight</span><span class="p">));</span>
 </span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="n">round</span><span class="p">(</span><span class="n">WEIGHT</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">SFW</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="n">WEIGHT</span> <span class="o">=</span> <span class="n">Get_Weight</span><span class="p">();</span>  <span class="c1">//计算放在传感器上的重物重量
+</span></span><span class="line"><span class="cl">      <span class="n">WEIGHT</span> <span class="o">=</span> <span class="n">Get_Weight</span><span class="p">();</span>  <span class="c1">//計算放在感測器上的重物重量
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="n">mylcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">3</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">      <span class="n">mylcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&#34;In Progress&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">      <span class="n">mylcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">4</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
@@ -281,7 +304,7 @@ D鍵：開啟自定義調節比例；<br>
 </span></span><span class="line"><span class="cl">    <span class="n">mylcd</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">    <span class="n">WEIGHT</span> <span class="o">=</span> <span class="n">Get_Weight</span><span class="p">();</span>  <span class="c1">//计算放在传感器上的重物重量
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">while</span> <span class="p">(</span><span class="n">round</span><span class="p">(</span><span class="n">WEIGHT</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">SFW</span><span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">round</span><span class="p">(</span><span class="n">WEIGHT</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">Weight</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="n">WEIGHT</span> <span class="o">=</span> <span class="n">Get_Weight</span><span class="p">();</span>  <span class="c1">//计算放在传感器上的重物重量
+</span></span><span class="line"><span class="cl">      <span class="n">WEIGHT</span> <span class="o">=</span> <span class="n">Get_Weight</span><span class="p">();</span>  <span class="c1">//計算放在感測器上的重物重量
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="n">mylcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">3</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">      <span class="n">mylcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&#34;In Progress&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">      <span class="n">mylcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">4</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
@@ -387,7 +410,7 @@ D鍵：開啟自定義調節比例；<br>
 </span></span><span class="line"><span class="cl">  <span class="n">mylcd</span><span class="p">.</span><span class="n">backlight</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">  <span class="n">mylcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="n">mylcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&#34;Welcome to use !&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">  <span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>    <span class="c1">///延时3秒
+</span></span><span class="line"><span class="cl">  <span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>    <span class="c1">///延時2秒
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">mylcd</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">   <span class="c1">//获取毛皮重量
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">Weight_Maopi</span> <span class="o">=</span> <span class="n">HX711_Read</span><span class="p">();</span> 
@@ -465,7 +488,7 @@ D鍵：開啟自定義調節比例；<br>
 				<p>
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://zhongxihao.github.io/tags/programmings">Programmings</a></span>
 				</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1508 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1621 Words</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2023-02-01 18:23 &#43;0800</p>
 			</footer>
 		</article>
@@ -477,14 +500,15 @@ D鍵：開啟自定義調節比例；<br>
     <li><a href="#工具與材料">工具與材料</a></li>
     <li><a href="#模塊功能介紹">模塊功能介紹</a>
       <ul>
-        <li><a href="#4x4-薄膜按鍵">4x4 薄膜按鍵</a></li>
-        <li><a href="#液晶顯示屏">液晶顯示屏</a></li>
+        <li><a href="#液晶屏">液晶屏</a></li>
+        <li><a href="#mg90s舵機">MG90S舵機</a></li>
         <li><a href="#按鈕">按鈕</a></li>
         <li><a href="#hx711-傳感器--壓力模塊">HX711 傳感器 + 壓力模塊</a></li>
+        <li><a href="#4x4-薄膜按鍵">4x4 薄膜按鍵</a></li>
       </ul>
     </li>
     <li><a href="#使用方法">使用方法</a></li>
-    <li><a href="#代碼arduino-mixly">代碼（Arduino/ Mixly）</a></li>
+    <li><a href="#代碼arduino--mixly">代碼（Arduino / Mixly）</a></li>
     <li><a href="#參考資料">參考資料</a></li>
   </ul>
 </nav>
