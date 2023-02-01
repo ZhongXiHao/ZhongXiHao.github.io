@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://zhongxihao.github.io/</loc>
+    <lastmod>2023-02-01T18:23:46+08:00</lastmod>
+  </url><url>
+    <loc>https://zhongxihao.github.io/posts/</loc>
+    <lastmod>2023-02-01T18:23:46+08:00</lastmod>
+  </url><url>
+    <loc>https://zhongxihao.github.io/tags/programmings/</loc>
+    <lastmod>2023-02-01T18:23:46+08:00</lastmod>
+  </url><url>
+    <loc>https://zhongxihao.github.io/tags/</loc>
+    <lastmod>2023-02-01T18:23:46+08:00</lastmod>
+  </url><url>
+    <loc>https://zhongxihao.github.io/posts/%E9%A1%86%E7%B2%92%E7%8B%80%E4%BB%BB%E6%84%8F%E9%85%8D%E6%AF%94%E8%AA%BF%E9%85%8D%E6%A9%9F%E5%99%A8/</loc>
+    <lastmod>2023-02-01T18:23:46+08:00</lastmod>
+  </url><url>
     <loc>https://zhongxihao.github.io/posts/assemble-for-training-in-2023/</loc>
     <lastmod>2023-01-27T21:26:34+08:00</lastmod>
   </url><url>
     <loc>https://zhongxihao.github.io/tags/memories/</loc>
-    <lastmod>2023-01-27T21:26:34+08:00</lastmod>
-  </url><url>
-    <loc>https://zhongxihao.github.io/</loc>
-    <lastmod>2023-01-27T21:26:34+08:00</lastmod>
-  </url><url>
-    <loc>https://zhongxihao.github.io/posts/</loc>
-    <lastmod>2023-01-27T21:26:34+08:00</lastmod>
-  </url><url>
-    <loc>https://zhongxihao.github.io/tags/</loc>
     <lastmod>2023-01-27T21:26:34+08:00</lastmod>
   </url><url>
     <loc>https://zhongxihao.github.io/tags/tfs/</loc>

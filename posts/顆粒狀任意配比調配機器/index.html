@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="顆粒狀任意配比調配機器">
+<meta itemprop="description" content="最後一次編輯於 21:19 1/2/2023 簡介 本項目為顆粒狀任意配比調配機器，可以使兩種顆粒狀的物質進行任意比例地混合（各不超過300克），無需人手操作，只須輸入重"><meta itemprop="datePublished" content="2023-02-01T18:23:46+08:00" />
+<meta itemprop="dateModified" content="2023-02-01T18:23:46+08:00" />
+<meta itemprop="wordCount" content="1508">
+<meta itemprop="keywords" content="Programmings," /><meta property="og:title" content="顆粒狀任意配比調配機器" />
+<meta property="og:description" content="最後一次編輯於 21:19 1/2/2023 簡介 本項目為顆粒狀任意配比調配機器，可以使兩種顆粒狀的物質進行任意比例地混合（各不超過300克），無需人手操作，只須輸入重" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zhongxihao.github.io/posts/%E9%A1%86%E7%B2%92%E7%8B%80%E4%BB%BB%E6%84%8F%E9%85%8D%E6%AF%94%E8%AA%BF%E9%85%8D%E6%A9%9F%E5%99%A8/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-02-01T18:23:46+08:00" />
+<meta property="article:modified_time" content="2023-02-01T18:23:46+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="顆粒狀任意配比調配機器"/>
+<meta name="twitter:description" content="最後一次編輯於 21:19 1/2/2023 簡介 本項目為顆粒狀任意配比調配機器，可以使兩種顆粒狀的物質進行任意比例地混合（各不超過300克），無需人手操作，只須輸入重"/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>顆粒狀任意配比調配機器</title>
+	<link rel="stylesheet" href="https://zhongxihao.github.io/css/style.min.037b6ee8f8c1baab6a3d0a9da11c3ff18a7552471f16c59fd98538d5ce99208b.css" integrity="sha256-A3tu6PjBuqtqPQqdoRw/8Yp1UkcfFsWf2YU41c6ZIIs=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://zhongxihao.github.io/">Midsnk</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://zhongxihao.github.io/tags/">Tags</a>
+				<a href="https://zhongxihao.github.io/posts/">Recent Posts</a>
+				<a href="https://zhongxihao.github.io/about-hugo/">About</a>
+
+					<script type="text/javascript"
+        async
+        src="https://cdn.bootcss.com/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[\[','\]\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+
+MathJax.Hub.Queue(function() {
+    
+    
+    
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<style>
+code.has-jax {
+    font: inherit;
+    font-size: 100%;
+    background: inherit;
+    border: inherit;
+    color: #515151;
+}
+</style>
+
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<button id="toc-btn" class="hdr-btn desktop-only-ib" title="Table of Contents"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3" y2="6"></line><line x1="3" y1="12" x2="3" y2="12"></line><line x1="3" y1="18" x2="3" y2="18"></line></svg></button><span class="hdr-social hide-in-mobile"><a href="mailto:zxh1245523241@gmail.com" target="_blank" rel="noopener me" title="Email"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a><a href="https://www.instagram.com/zhong_xihao/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/ZhongXiHao" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://zhongxihao.github.io/tags/">Tags</a></li>
+			<li><a href="https://zhongxihao.github.io/posts/">Recent Posts</a></li>
+			<li><a href="https://zhongxihao.github.io/about-hugo/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Feb 1, 2023</span></div>
+				<h1>顆粒狀任意配比調配機器</h1>
+			</header>
+			<div class="content">
+				<p>最後一次編輯於 <em>21:19 1/2/2023</em></p>
+<h2 id="簡介">簡介<a href="#簡介" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p>本項目為顆粒狀任意配比調配機器，可以使兩種顆粒狀的物質進行任意比例地混合（各不超過300克），無需人手操作，只須輸入重量及比例即可。
+<figure>
+<center>
+<img src="/img/%e9%a1%86%e7%b2%92%e7%8b%80%e4%bb%bb%e6%84%8f%e9%85%8d%e6%af%94%e8%aa%bf%e9%85%8d%e6%a9%9f%e5%99%a8/front.jpg" alt="項目正面圖">
+<figcaption>項目正面圖</figcaption>
+</center>
+</figure></p>
+<p>項目使用Arduino進行編寫，<a href="http://localhost:1313/posts/%E9%A1%86%E7%B2%92%E7%8B%80%E4%BB%BB%E6%84%8F%E9%85%8D%E6%AF%94%E8%AA%BF%E9%85%8D%E6%A9%9F%E5%99%A8/#%E4%BB%A3%E7%A2%BCarduino">程序</a>放在文末。</p>
+<p><figure>
+<center>
+<img src="/img/%e9%a1%86%e7%b2%92%e7%8b%80%e4%bb%bb%e6%84%8f%e9%85%8d%e6%af%94%e8%aa%bf%e9%85%8d%e6%a9%9f%e5%99%a8/programming.jpg" alt="程序介面圖">
+<figcaption>程序介面圖</figcaption>
+</center>
+</figure></p>
+<h2 id="工具與材料">工具與材料<a href="#工具與材料" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<ol>
+<li>Arduino UNO AVR板；</li>
+<li>I/O Sensor UI板；</li>
+<li>LCM 1602 IIC液晶屏；</li>
+<li>MG90S舵機*2；</li>
+<li>按鈕*3；</li>
+<li>4x4 薄膜按鍵；</li>
+<li>HX711 傳感器 + 壓力模塊；</li>
+<li>礦泉水瓶等其他材料。</li>
+</ol>
+<h2 id="模塊功能介紹">模塊功能介紹<a href="#模塊功能介紹" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<p><figure>
+<center>
+<img src="/img/%e9%a1%86%e7%b2%92%e7%8b%80%e4%bb%bb%e6%84%8f%e9%85%8d%e6%af%94%e8%aa%bf%e9%85%8d%e6%a9%9f%e5%99%a8/info.jpg" alt="項目俯視圖">
+<figcaption>項目俯視圖</figcaption>
+</center>
+</figure></p>
+<h3 id="4x4-薄膜按鍵">4x4 薄膜按鍵<a href="#4x4-薄膜按鍵" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p><strong>輸入資料，各個按鍵對應功能如下：</strong><br>
+數字鍵：輸入質量的數字；<br>
+A鍵：自動輸入比例為9: 1，即左瓶子為90%，右瓶子為10%；<br>
+B鍵：自動輸入比例為1: 1，即左瓶子為50%，右瓶子為50%；<br>
+C鍵：自動輸入比例為1: 9，即左瓶子為10%，右瓶子為90%；<br>
+D鍵：開啟自定義調節比例；<br>
+*鍵：清零數字；<br>
+#鍵：刪除最後一個數字。</p>
+<h3 id="液晶顯示屏">液晶顯示屏<a href="#液晶顯示屏" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>顯示輸入資料，進度等。</p>
+<h3 id="按鈕">按鈕<a href="#按鈕" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>最左邊用於調高左瓶子內的顆粒物的比例；中間用於調高右瓶子內的顆粒物的比例（每次調高5%，且需要開啟D模式才可）。最右邊用於開始執行傾倒工作（若未輸入質量或左右瓶子比例之和不等於1，則無法執行）。</p>
+<h3 id="hx711-傳感器--壓力模塊">HX711 傳感器 + 壓力模塊<a href="#hx711-傳感器--壓力模塊" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>獲取當前質量。</p>
+<h2 id="使用方法">使用方法<a href="#使用方法" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<ol>
+<li>
+<p>倒入顆粒狀物質。</p>
+</li>
+<li>
+<p>接入電源（使用插頭或充電寶連接USB-A線即可）。
+<figure>
+<center>
+<img src="/img/%e9%a1%86%e7%b2%92%e7%8b%80%e4%bb%bb%e6%84%8f%e9%85%8d%e6%af%94%e8%aa%bf%e9%85%8d%e6%a9%9f%e5%99%a8/charge.jpg" alt="接入電源">
+<figcaption>接入電源</figcaption>
+</center>
+</figure></p>
+</li>
+<li>
+<p>輸入質量。
+<figure>
+<center>
+<img src="/img/%e9%a1%86%e7%b2%92%e7%8b%80%e4%bb%bb%e6%84%8f%e9%85%8d%e6%af%94%e8%aa%bf%e9%85%8d%e6%a9%9f%e5%99%a8/input.jpg" alt="輸入質量">
+<figcaption>輸入質量</figcaption>
+</center>
+</figure></p>
+</li>
+<li>
+<p>調節比例（使用A、B、C鍵快速自動調節，或開啟D模式手動調節）。
+<figure>
+<center>
+<img src="/img/%e9%a1%86%e7%b2%92%e7%8b%80%e4%bb%bb%e6%84%8f%e9%85%8d%e6%af%94%e8%aa%bf%e9%85%8d%e6%a9%9f%e5%99%a8/mode.jpg" alt="快速調節比例">
+<figcaption>快速調節比例</figcaption>
+</center>
+</figure>
+<figure>
+<center>
+<img src="/img/%e9%a1%86%e7%b2%92%e7%8b%80%e4%bb%bb%e6%84%8f%e9%85%8d%e6%af%94%e8%aa%bf%e9%85%8d%e6%a9%9f%e5%99%a8/adjust.jpg" alt="手動調節比例（僅開啟D模式下可執行）">
+<figcaption>手動調節比例（僅開啟D模式下可執行）</figcaption>
+</center>
+</figure></p>
+</li>
+<li>
+<p>按下最右邊的按鈕，開始執行傾倒工作。</p>
+</li>
+<li>
+<p>等待傾倒工作完成
+<figure>
+<center>
+<img src="/img/%e9%a1%86%e7%b2%92%e7%8b%80%e4%bb%bb%e6%84%8f%e9%85%8d%e6%af%94%e8%aa%bf%e9%85%8d%e6%a9%9f%e5%99%a8/inprogress.jpg" alt="工作正在進行">
+<figcaption>工作正在進行</figcaption>
+</center>
+</figure></p>
+</li>
+</ol>
+<h2 id="代碼arduino-mixly">代碼（Arduino/ Mixly）<a href="#代碼arduino-mixly" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;Wire.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;LiquidCrystal_I2C.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;Keypad.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;Servo.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="k">extern</span> <span class="kt">unsigned</span> <span class="kt">long</span> <span class="nf">HX711_Read</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">extern</span> <span class="kt">long</span> <span class="nf">Get_Weight</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">///变量定义
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">float</span> <span class="n">WEIGHT</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">HX711_SCK</span> <span class="o">=</span><span class="mi">2</span><span class="p">;</span>   <span class="c1">///     作為輸出口
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">HX711_DT</span><span class="o">=</span> <span class="mi">4</span><span class="p">;</span>    <span class="c1">///     作為輸入口
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">long</span> <span class="n">HX711_Buffer</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">long</span> <span class="n">Weight_Maopi</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Weight_Shiwu</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"> <span class="cp">#define GapValue 405      
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="n">LiquidCrystal_I2C</span> <span class="nf">mylcd</span><span class="p">(</span><span class="mh">0x27</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">volatile</span> <span class="kt">int</span> <span class="n">test</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">String</span> <span class="n">item</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">volatile</span> <span class="kt">int</span> <span class="n">SF</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">volatile</span> <span class="kt">int</span> <span class="n">CS</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">String</span> <span class="n">W</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">volatile</span> <span class="kt">int</span> <span class="n">Weight</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">volatile</span> <span class="kt">int</span> <span class="n">SFW</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">volatile</span> <span class="kt">int</span> <span class="n">CSW</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">volatile</span> <span class="kt">int</span> <span class="n">DMODE</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Servo</span> <span class="n">servo_A2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Servo</span> <span class="n">servo_A3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="n">byte</span> <span class="n">KEYPAD_4_4_ROWS</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="n">byte</span> <span class="n">KEYPAD_4_4_COLS</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">KEYPAD_4_4_hexaKeys</span><span class="p">[</span><span class="n">KEYPAD_4_4_ROWS</span><span class="p">][</span><span class="n">KEYPAD_4_4_COLS</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span><span class="sc">&#39;1&#39;</span><span class="p">,</span><span class="sc">&#39;2&#39;</span><span class="p">,</span><span class="sc">&#39;3&#39;</span><span class="p">,</span><span class="sc">&#39;A&#39;</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span><span class="sc">&#39;4&#39;</span><span class="p">,</span><span class="sc">&#39;5&#39;</span><span class="p">,</span><span class="sc">&#39;6&#39;</span><span class="p">,</span><span class="sc">&#39;B&#39;</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span><span class="sc">&#39;7&#39;</span><span class="p">,</span><span class="sc">&#39;8&#39;</span><span class="p">,</span><span class="sc">&#39;9&#39;</span><span class="p">,</span><span class="sc">&#39;C&#39;</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span><span class="sc">&#39;*&#39;</span><span class="p">,</span><span class="sc">&#39;0&#39;</span><span class="p">,</span><span class="sc">&#39;#&#39;</span><span class="p">,</span><span class="sc">&#39;D&#39;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="n">byte</span> <span class="n">KEYPAD_4_4_rowPins</span><span class="p">[</span><span class="n">KEYPAD_4_4_ROWS</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">13</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">10</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="n">byte</span> <span class="n">KEYPAD_4_4_colPins</span><span class="p">[</span><span class="n">KEYPAD_4_4_COLS</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">6</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="n">Keypad</span> <span class="n">KEYPAD_4_4</span> <span class="o">=</span> <span class="n">Keypad</span><span class="p">(</span><span class="n">makeKeymap</span><span class="p">(</span><span class="n">KEYPAD_4_4_hexaKeys</span><span class="p">),</span> <span class="n">KEYPAD_4_4_rowPins</span><span class="p">,</span> <span class="n">KEYPAD_4_4_colPins</span><span class="p">,</span> <span class="n">KEYPAD_4_4_ROWS</span><span class="p">,</span> <span class="n">KEYPAD_4_4_COLS</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">Delete</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">W</span> <span class="o">=</span> <span class="n">String</span><span class="p">(</span><span class="n">W</span><span class="p">).</span><span class="n">substring</span><span class="p">(</span><span class="mi">0</span><span class="p">,(</span><span class="n">String</span><span class="p">(</span><span class="n">W</span><span class="p">).</span><span class="n">length</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">W</span> <span class="o">==</span> <span class="s">&#34;&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">W</span> <span class="o">=</span> <span class="s">&#34;0&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Weight</span> <span class="o">=</span> <span class="n">String</span><span class="p">(</span><span class="n">W</span><span class="p">).</span><span class="n">toInt</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Weight</span> <span class="o">=</span> <span class="n">String</span><span class="p">(</span><span class="n">W</span><span class="p">).</span><span class="n">toInt</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">Pour</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">Weight</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">CS</span> <span class="o">+</span> <span class="n">SF</span> <span class="o">&lt;</span> <span class="mi">100</span> <span class="o">||</span> <span class="n">Weight</span> <span class="o">&gt;=</span> <span class="mi">600</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="k">return</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">mylcd</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">WEIGHT</span> <span class="o">=</span> <span class="n">Get_Weight</span><span class="p">();</span>  <span class="c1">//计算放在传感器上的重物重量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">mylcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">10</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">mylcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&#34;/ &#34;</span><span class="o">+</span><span class="n">String</span><span class="p">(</span><span class="n">Weight</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="n">round</span><span class="p">(</span><span class="n">WEIGHT</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">SFW</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">WEIGHT</span> <span class="o">=</span> <span class="n">Get_Weight</span><span class="p">();</span>  <span class="c1">//计算放在传感器上的重物重量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="n">mylcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">3</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="n">mylcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&#34;In Progress&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="n">mylcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">4</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="n">mylcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">String</span><span class="p">(</span><span class="n">round</span><span class="p">(</span><span class="n">WEIGHT</span><span class="p">)));</span>
+</span></span><span class="line"><span class="cl">      <span class="n">servo_A2</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">55</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="n">servo_A3</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">122</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">mylcd</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">WEIGHT</span> <span class="o">=</span> <span class="n">Get_Weight</span><span class="p">();</span>  <span class="c1">//计算放在传感器上的重物重量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">while</span> <span class="p">(</span><span class="n">round</span><span class="p">(</span><span class="n">WEIGHT</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">SFW</span><span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="n">round</span><span class="p">(</span><span class="n">WEIGHT</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">Weight</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">WEIGHT</span> <span class="o">=</span> <span class="n">Get_Weight</span><span class="p">();</span>  <span class="c1">//计算放在传感器上的重物重量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>      <span class="n">mylcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">3</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="n">mylcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&#34;In Progress&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="n">mylcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">4</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="n">mylcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">String</span><span class="p">(</span><span class="n">round</span><span class="p">(</span><span class="n">WEIGHT</span><span class="p">)));</span>
+</span></span><span class="line"><span class="cl">      <span class="n">servo_A2</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="n">servo_A3</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">152</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">round</span><span class="p">(</span><span class="n">WEIGHT</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">Weight</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">servo_A2</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="n">servo_A3</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">122</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">SF</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CS</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">W</span> <span class="o">=</span> <span class="s">&#34;0&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Weight</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">mylcd</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">mylcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">4</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">mylcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&#34;Finished!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">Reset</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">W</span> <span class="o">=</span> <span class="s">&#34;0&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Weight</span> <span class="o">=</span> <span class="n">String</span><span class="p">(</span><span class="n">W</span><span class="p">).</span><span class="n">toInt</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">Dmode</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">SF</span> <span class="o">+</span> <span class="n">CS</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">SF</span> <span class="o">=</span> <span class="n">SF</span> <span class="o">+</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">SF</span> <span class="o">&lt;</span> <span class="mi">100</span> <span class="o">&amp;&amp;</span> <span class="n">CS</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">SF</span> <span class="o">=</span> <span class="n">SF</span> <span class="o">+</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="n">CS</span> <span class="o">=</span> <span class="n">CS</span> <span class="o">-</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">digitalRead</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">SF</span> <span class="o">+</span> <span class="n">CS</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">CS</span> <span class="o">=</span> <span class="n">CS</span> <span class="o">+</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">CS</span> <span class="o">&lt;</span> <span class="mi">100</span> <span class="o">&amp;&amp;</span> <span class="n">SF</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">CS</span> <span class="o">=</span> <span class="n">CS</span> <span class="o">+</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="n">SF</span> <span class="o">=</span> <span class="n">SF</span> <span class="o">-</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">long</span> <span class="nf">Get_Weight</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"> <span class="n">HX711_Buffer</span> <span class="o">=</span> <span class="n">HX711_Read</span><span class="p">();</span>    <span class="c1">///讀取此時的感測器輸出值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> <span class="n">Weight_Shiwu</span> <span class="o">=</span> <span class="n">HX711_Buffer</span><span class="p">;</span>     <span class="c1">///將感測器的輸出值儲存
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> <span class="n">Weight_Shiwu</span> <span class="o">=</span> <span class="n">Weight_Shiwu</span> <span class="o">-</span> <span class="n">Weight_Maopi</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl"> <span class="n">Weight_Shiwu</span> <span class="o">=</span> <span class="p">(</span><span class="kt">long</span><span class="p">)((</span><span class="kt">float</span><span class="p">)</span><span class="n">Weight_Shiwu</span><span class="o">/</span><span class="n">GapValue</span><span class="p">);</span>    <span class="c1">//AD值轉換為重量（g）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span> <span class="k">return</span> <span class="n">Weight_Shiwu</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">unsigned</span> <span class="kt">long</span> <span class="nf">HX711_Read</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">count</span><span class="p">;</span>   <span class="c1">///儲存輸出值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">i</span><span class="p">;</span>     
+</span></span><span class="line"><span class="cl">  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">HX711_DT</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>   
+</span></span><span class="line"><span class="cl">  <span class="n">delayMicroseconds</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl">  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">HX711_SCK</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>  
+</span></span><span class="line"><span class="cl">  <span class="n">delayMicroseconds</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl">  <span class="n">count</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">  <span class="k">while</span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">HX711_DT</span><span class="p">));</span>   
+</span></span><span class="line"><span class="cl">  <span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">24</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">digitalWrite</span><span class="p">(</span><span class="n">HX711_SCK</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>  
+</span></span><span class="line"><span class="cl">  <span class="n">delayMicroseconds</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl">  <span class="n">count</span><span class="o">=</span><span class="n">count</span><span class="o">&lt;&lt;</span><span class="mi">1</span><span class="p">;</span>   
+</span></span><span class="line"><span class="cl">  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">HX711_SCK</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl">  <span class="n">delayMicroseconds</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span><span class="p">(</span><span class="n">digitalRead</span><span class="p">(</span><span class="n">HX711_DT</span><span class="p">))</span>   
+</span></span><span class="line"><span class="cl">  <span class="n">count</span><span class="o">++</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">HX711_SCK</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">);</span>   
+</span></span><span class="line"><span class="cl">  <span class="n">count</span> <span class="o">^=</span> <span class="mh">0x800000</span><span class="p">;</span>   
+</span></span><span class="line"><span class="cl">  <span class="c1">///对应二进制  1000 0000 0000 0000 0000 0000 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">delayMicroseconds</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">digitalWrite</span><span class="p">(</span><span class="n">HX711_SCK</span><span class="p">,</span> <span class="n">LOW</span><span class="p">);</span>          
+</span></span><span class="line"><span class="cl">  <span class="n">delayMicroseconds</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>  <span class="c1">////延時1微秒  
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">return</span><span class="p">(</span><span class="n">count</span><span class="p">);</span>     <span class="c1">///返回感測器讀取值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">setup</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">  <span class="n">servo_A2</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">90</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">delay</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">servo_A3</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">122</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">delay</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">servo_A2</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="n">A2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">servo_A3</span><span class="p">.</span><span class="n">attach</span><span class="p">(</span><span class="n">A3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">//初始化HX711的两个io口       
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">pinMode</span><span class="p">(</span><span class="n">HX711_SCK</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">);</span>  <span class="c1">///SCK為輸出口---輸出脈衝
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">pinMode</span><span class="p">(</span><span class="n">HX711_DT</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span> <span class="c1">///  DT為輸入口---讀取數據
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">mylcd</span><span class="p">.</span><span class="n">init</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="n">mylcd</span><span class="p">.</span><span class="n">backlight</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="n">mylcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">mylcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&#34;Welcome to use !&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">delay</span><span class="p">(</span><span class="mi">2000</span><span class="p">);</span>    <span class="c1">///延时3秒
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">mylcd</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">   <span class="c1">//获取毛皮重量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">Weight_Maopi</span> <span class="o">=</span> <span class="n">HX711_Read</span><span class="p">();</span> 
+</span></span><span class="line"><span class="cl">  <span class="n">test</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">item</span> <span class="o">=</span> <span class="s">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">SF</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">CS</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">W</span> <span class="o">=</span> <span class="s">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Weight</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">SFW</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">CSW</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">DMODE</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">pinMode</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">pinMode</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">pinMode</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">INPUT</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">loop</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">  <span class="n">WEIGHT</span> <span class="o">=</span> <span class="n">Get_Weight</span><span class="p">();</span>  <span class="c1">//計算放在感測器上的重物重量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  
+</span></span><span class="line"><span class="cl">  <span class="n">item</span> <span class="o">=</span> <span class="n">String</span><span class="p">(</span><span class="n">KEYPAD_4_4</span><span class="p">.</span><span class="n">getKey</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">DMODE</span> <span class="o">==</span> <span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Dmode</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">W</span> <span class="o">==</span> <span class="s">&#34;&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">W</span> <span class="o">=</span> <span class="s">&#34;0&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Weight</span> <span class="o">=</span> <span class="n">String</span><span class="p">(</span><span class="n">W</span><span class="p">).</span><span class="n">toInt</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="n">item</span> <span class="o">==</span> <span class="s">&#34;A&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DMODE</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">SF</span> <span class="o">=</span> <span class="mi">90</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CS</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">item</span> <span class="o">==</span> <span class="s">&#34;B&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DMODE</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">SF</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CS</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">item</span> <span class="o">==</span> <span class="s">&#34;C&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DMODE</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">SF</span> <span class="o">=</span> <span class="mi">90</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CS</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">item</span> <span class="o">==</span> <span class="s">&#34;D&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DMODE</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">item</span> <span class="o">==</span> <span class="s">&#34;#&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Delete</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">item</span> <span class="o">==</span> <span class="s">&#34;*&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Reset</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">Weight</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="n">W</span> <span class="o">=</span> <span class="n">String</span><span class="p">(</span><span class="n">W</span><span class="p">)</span> <span class="o">+</span> <span class="n">String</span><span class="p">(</span><span class="n">item</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">      <span class="n">Weight</span> <span class="o">=</span> <span class="n">String</span><span class="p">(</span><span class="n">W</span><span class="p">).</span><span class="n">toInt</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="n">mylcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">mylcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">String</span><span class="p">(</span><span class="s">&#34;WEIGHT:  &#34;</span><span class="p">)</span> <span class="o">+</span> <span class="n">String</span><span class="p">(</span><span class="n">String</span><span class="p">(</span><span class="n">Weight</span><span class="p">)</span> <span class="o">+</span> <span class="n">String</span><span class="p">(</span><span class="s">&#34;  g&#34;</span><span class="p">)));</span>
+</span></span><span class="line"><span class="cl">  <span class="n">mylcd</span><span class="p">.</span><span class="n">setCursor</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">mylcd</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">String</span><span class="p">(</span><span class="n">String</span><span class="p">(</span><span class="s">&#34;LF: &#34;</span><span class="p">)</span> <span class="o">+</span> <span class="n">String</span><span class="p">(</span><span class="n">String</span><span class="p">(</span><span class="n">SF</span><span class="p">)</span> <span class="o">+</span> <span class="n">String</span><span class="p">(</span><span class="s">&#34;%&#34;</span><span class="p">)))</span> <span class="o">+</span> <span class="n">String</span><span class="p">(</span><span class="n">String</span><span class="p">(</span><span class="n">String</span><span class="p">(</span><span class="s">&#34; RT: &#34;</span><span class="p">)</span> <span class="o">+</span> <span class="n">String</span><span class="p">(</span><span class="n">CS</span><span class="p">))</span> <span class="o">+</span> <span class="n">String</span><span class="p">(</span><span class="s">&#34;%&#34;</span><span class="p">)));</span>
+</span></span><span class="line"><span class="cl">  <span class="n">SFW</span> <span class="o">=</span> <span class="n">round</span><span class="p">((</span><span class="n">Weight</span> <span class="o">*</span> <span class="n">SF</span><span class="p">)</span> <span class="o">/</span> <span class="mi">100</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">CSW</span> <span class="o">=</span> <span class="n">Weight</span> <span class="o">-</span> <span class="n">SF</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Pour</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>  <span class="c1">//延时100ms 每100ms讀取一次感測器所受壓力
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="n">mylcd</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="參考資料">參考資料<a href="#參考資料" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<ol>
+<li><a href="https://zhuanlan.zhihu.com/p/349835678">https://zhuanlan.zhihu.com/p/349835678</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/93838734">https://zhuanlan.zhihu.com/p/93838734</a></li>
+</ol>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://zhongxihao.github.io/tags/programmings">Programmings</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>1508 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2023-02-01 18:23 &#43;0800</p>
+			</footer>
+		</article>
+		<aside id="toc">
+			<div class="toc-title">Table of Contents</div>
+			<nav id="TableOfContents">
+  <ul>
+    <li><a href="#簡介">簡介</a></li>
+    <li><a href="#工具與材料">工具與材料</a></li>
+    <li><a href="#模塊功能介紹">模塊功能介紹</a>
+      <ul>
+        <li><a href="#4x4-薄膜按鍵">4x4 薄膜按鍵</a></li>
+        <li><a href="#液晶顯示屏">液晶顯示屏</a></li>
+        <li><a href="#按鈕">按鈕</a></li>
+        <li><a href="#hx711-傳感器--壓力模塊">HX711 傳感器 + 壓力模塊</a></li>
+      </ul>
+    </li>
+    <li><a href="#使用方法">使用方法</a></li>
+    <li><a href="#代碼arduino-mixly">代碼（Arduino/ Mixly）</a></li>
+    <li><a href="#參考資料">參考資料</a></li>
+  </ul>
+</nav>
+		</aside>
+		<div class="post-nav thin">
+			<a class="prev-post" href="https://zhongxihao.github.io/posts/assemble-for-training-in-2023/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Assemble For Training In 2023</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2023 <a href="https://zhongxihao.github.io/">Midsnk</a>   Created on 08/01/2023</p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://zhongxihao.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://zhongxihao.github.io/js/bundle.min.580988ed2982bcbb74a1773c7abea97b43e4c43b9324e10cda0813ec6ec4bb67.js" integrity="sha256-WAmI7SmCvLt0oXc8er6pe0PkxDuTJOEM2ggT7G7Eu2c=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

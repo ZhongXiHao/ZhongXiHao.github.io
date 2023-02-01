@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programmings on Midsnk</title>
+    <link>https://zhongxihao.github.io/tags/programmings/</link>
+    <description>Recent content in Programmings on Midsnk</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 01 Feb 2023 18:23:46 +0800</lastBuildDate><atom:link href="https://zhongxihao.github.io/tags/programmings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>顆粒狀任意配比調配機器</title>
+      <link>https://zhongxihao.github.io/posts/%E9%A1%86%E7%B2%92%E7%8B%80%E4%BB%BB%E6%84%8F%E9%85%8D%E6%AF%94%E8%AA%BF%E9%85%8D%E6%A9%9F%E5%99%A8/</link>
+      <pubDate>Wed, 01 Feb 2023 18:23:46 +0800</pubDate>
+      
+      <guid>https://zhongxihao.github.io/posts/%E9%A1%86%E7%B2%92%E7%8B%80%E4%BB%BB%E6%84%8F%E9%85%8D%E6%AF%94%E8%AA%BF%E9%85%8D%E6%A9%9F%E5%99%A8/</guid>
+      <description>最後一次編輯於 21:19 1/2/2023 簡介 本項目為顆粒狀任意配比調配機器，可以使兩種顆粒狀的物質進行任意比例地混合（各不超過300克），無需人手操作，只須輸入重</description>
+    </item>
+    
+  </channel>
+</rss>
