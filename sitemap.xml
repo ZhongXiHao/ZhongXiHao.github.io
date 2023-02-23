@@ -2,8 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://zhongxihao.github.io/inspirations/</loc>
+    <lastmod>2023-02-24T00:03:55+08:00</lastmod>
+  </url><url>
     <loc>https://zhongxihao.github.io/</loc>
-    <lastmod>2023-02-14T13:16:04+08:00</lastmod>
+    <lastmod>2023-02-24T00:03:55+08:00</lastmod>
+  </url><url>
+    <loc>https://zhongxihao.github.io/inspirations/%E6%84%9F%E5%BE%80%E6%98%94%E4%BA%8B-%E5%98%86%E4%BB%8A%E6%97%A5%E6%83%85/</loc>
+    <lastmod>2023-02-24T00:03:55+08:00</lastmod>
   </url><url>
     <loc>https://zhongxihao.github.io/posts/</loc>
     <lastmod>2023-02-14T13:16:04+08:00</lastmod>
@@ -48,7 +54,5 @@
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://zhongxihao.github.io/categories/</loc>
-  </url><url>
-    <loc>https://zhongxihao.github.io/inspirations/</loc>
   </url>
 </urlset>
